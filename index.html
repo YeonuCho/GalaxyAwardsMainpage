@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Main Page</title>
+	<link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+	<style>
+		
+
+		@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+		html{font-family: 'SF Pro Display', sans-serif;}
+
+		body{margin: 0;}
+
+		.border{
+			border-style: solid;
+			border-width: 1px;
+			border-color: #707070;
+		}
+
+		.container{
+			flex-grow: 1;
+			margin: 0 auto;
+		}
+
+		.box{
+			background-color: red;
+			padding: 0px;
+			display: flex;
+			height: 1040px;
+		}
+
+		.box-sidebar{
+			background-color: white;
+			padding: 0;
+			flex-shrink: 0;
+			width: 120px;
+		}
+		
+		.box-contents{
+			background-color: white;
+			padding: 0px;
+			flex-grow: 1;
+		}
+
+		.insideline0{
+			background-color: white;
+			width: 223px;
+			height: 1040px;
+			margin: 0;
+			display: flex;
+		}
+
+		.insideline0-1{
+			background-color: white;
+			flex-grow: 1;
+			display: flex;
+		}
+
+		.insideline1{
+			background-color: red;
+			height: 490px;
+			display: flex;
+		}
+
+		.insideline1-1{
+			background-color: black;
+			height: 490px;
+			width: 860px;
+			flex-shrink: 0;
+			font-weight: bold;
+			font-size: 6rem;
+		}
+
+		.insideline1-2{
+			background-color: white;
+			height: 490px;
+			flex-grow: 1;
+			font-size: 1.2rem;
+		}
+
+		.insideline2{
+			background-color: red;
+			height: 160px;
+			flex-grow: 1;
+			display: flex;
+		}
+
+		.insideline2-1{
+			background-color: white;
+			width: 700px;
+			height: 160px;
+			font-weight: bold;
+			font-size: 4rem;
+			flex-shrink: 0;
+		}
+
+		.insideline2-2{
+			background-color: white;
+			flex-grow: 1;
+			height: 160px;
+		}
+
+		.insideline3{
+			background-color: red;
+			height: 160px;
+			flex-grow: 1;
+			display: flex;
+		}
+
+		.insideline3-1{
+			background-color: white;
+			height: 160px;
+			width: 860px;			
+			display: flex;
+			font-weight: bold;
+			font-size: 4rem;
+			white-space: nowrap;
+			overflow: hidden;
+			flex-shrink: 0;
+		}
+
+		.insideline3-2{
+			background-color: black;
+			height: 160px;
+			flex-grow: 1;
+			display: flex;
+			font-weight: bold;
+			font-size: 4rem;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.insideline4{
+			background-color: red;
+			height: 160px;
+			flex-grow: 1;
+			display: flex;
+		}
+
+		.insideline4-1{
+			background-color: white;
+			height: 160px;
+			width: 540px;
+			display: flex;
+			font-weight: bold;
+			font-size: 3rem;
+			white-space: nowrap;
+			display: block;
+		}
+
+		.insideline4-2{
+			background-color: white;
+			height: 160px;
+			width: 318px;
+			display: flex;
+			font-weight: bold;
+			font-size: 3rem;
+		}
+
+		.insideline4-3{
+			background-color: white;
+			height: 160px;
+			flex-grow: 1;
+		
+		}
+
+		.insideline4-3-1{
+			background-color: white;
+			height: 79px;
+			flex-grow: 1;
+			font-weight: bold;
+			font-size: 2rem;
+		}
+
+		.insideline4-3-2{
+			background-color: white;
+			height: 79px;
+			flex-grow: 1;
+			font-weight: bold;
+			font-size: 2rem;
+		}
+
+		.footer{
+			background-color: white;
+			height: 58px;
+			flex-grow: 1;
+			display: flex;
+		}
+
+		.footer1{
+			background-color: white;
+			height: 58px;
+			flex-grow: 1;
+		}
+
+		.footer2{
+			background-color: white;
+			height: 58px;
+			width: 340px;
+		}
+
+		.blackbox{
+			width: 160px;
+			height: 160px;
+			background-color: black;
+		}
+
+		.circle{
+			background-color: white;
+			height: 160px;
+			width: 160px;
+			border-radius: 50%;
+		}
+
+		.buttonwrap{
+			display: flex;
+		}
+
+		.buttonblank{
+			background-color: black;
+			width: 490px;
+		}
+
+		.button{
+			background-color: white;
+			width: 300px;
+			height: 60px;
+			margin-top: 50px;
+		}
+
+		.textwhite{
+			color: white;
+		}
+
+		a{
+			text-decoration: none;
+			color: black;
+		}
+
+		.button:hover{
+			background-color: red;
+		}
+
+		a:hover{
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<section class="box">
+			<aside class="box-sidebar border">
+				<a href="./menu.html">
+				<img style="width: 60%; display: block; margin: 0 auto; padding-top: 940px;" src="./menuicon.jpg">
+				</a>
+			</aside>			
+			<div class="box-contents border">
+				<div class="insideline1 border">
+					<div class="insideline1-1 textwhite">
+						<p style="margin: 0; padding-top: 30px; padding-left: 50px;">2023 Galaxy Awards</p>
+						<p style="font-weight: normal;
+							font-size: 1.2rem; padding-left: 50px;">August 26th - October 17th</p>
+							
+							<div class="buttonwrap">
+							<div class="buttonblank"></div>
+							<a href="./2023awards.html">
+							<div class="button">
+							
+							<p style="font-size: 2rem; color: black; margin: 0; padding-top: 10px; padding-left: 24px">Go to submission</p>
+							</div>
+							</a>
+						</div>
+					</div>
+					<div class="insideline1-2">
+						<p style="margin: 0; padding: 30px; line-height: 32px;">2023 Galaxy Awards Submissions will close October 17th
+						<br>MAY 2, 2023</p>
+
+						<p style="margin: 0; padding: 30px; padding-top: 0; line-height: 32px;">Nominations for the 2023 Galaxy Awards, 2023 Hugo Awards, Lodestar Award for Best Young Adult Book, and Astounding Award for Best New Writer closed on April 30, 2023. Finalists will be revealed by the Chengdu 2023 Worldcon committee at a date yet to be announced.</p>
+					</div>
+				</div>
+				<div class="insideline2 border">
+					<div class="insideline2-1">
+						<p style="margin: 0; padding-top:40px; padding-left: 50px;"><a href="../2022awards.html">Awards by Year</a></p>
+					</div>
+						<div class="blackbox">
+							<div class="circle"></div>
+						</div>
+					<div class="insideline2-2">
+						<marquee loop="50" direction="right" bgcolor="white" style="color: red; font-size: 1.2rem">2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived!</marquee>
+						<marquee loop="50" direction="left" bgcolor="white" style="color: red; font-size: 1.2rem">2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived!</marquee>
+						<marquee loop="50" direction="right" bgcolor="white" style="color: red; font-size: 1.2rem">2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived!</marquee>
+						<marquee loop="50" direction="left" bgcolor="white" style="color: red; font-size: 1.2rem">2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived!</marquee>
+						<marquee loop="50" direction="right" bgcolor="white" style="color: red; font-size: 1.2rem">2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived!</marquee>
+						<marquee loop="50" direction="left" bgcolor="white" style="color: red; font-size: 1.2rem">2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived! 2023 Galaxy Awards Submissions almost arrived!</marquee>
+					</div>
+				</div>
+				<div class="insideline3 border">
+					<div class="insideline3-1">
+						
+						<marquee loop="50" direction="left" bgcolor="white" style="margin: 0; padding-top:40px; padding-left: 50px;"><a href="./event.html">Event: Academic Presentation about AI of SF Literature in ChatGPT era</a></marquee>
+					</div>
+					<div class="blackbox">
+						<div class="circle"></div>
+					</div>
+					<div class="insideline3-2">
+						<marquee loop="50" direction="left" bgcolor="black" style="margin: 0; padding-top:40px; padding-left: 50px; color: white;">Today, science and technology began with the scientific revolution of Western Europe in the 17th century. Physical laws and new inventions, which began to be revealed one by one from the scientific revolution, provided an opportunity for humans to recognize themselves as a "primate of all things" capable of using the power of nature by pursuing reason as the ruler of nature. Under these modern steps of progress, the existing medieval order, that is, faith and reason, was separated like a sword, and the world of imagination and fantasy was naturally otherized and marginalized. However, "false" science fiction originated in earnest in the late 18th and early 19th centuries when rationalism reached its peak, as defined by Hugo Gunsback, because science fiction was an artistic desire for science with a romantic view of science.</marquee>
+					</div>
+					<div class="blackbox">
+						<div class="circle"></div>
+					</div>
+				</div>
+				<div class="insideline4 border">
+					<div class="insideline4-1">
+						<p style="margin: 0; padding-top: 30px; padding-left: 50px; line-height: 48px;">Follow us :</p>
+						<marquee loop="50" direction="left" bgcolor="white" style="margin: 0; padding-top:10px;"><a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Facebook</a>    <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Instagram</a>    <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Twitter</a></marquee>
+						<marquee loop="50" direction="left" bgcolor="white" style="margin: 0; padding-top:10px;"><a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Facebook</a>    <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Instagram</a>    <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Twitter</a></marquee>
+						<marquee loop="50" direction="left" bgcolor="white" style="margin: 0; padding-top:10px;"><a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Facebook</a>    <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Instagram</a>    <a href="https://baike.baidu.com/item/%E9%93%B6%E6%B2%B3%E5%A5%96/7167150">Twitter</a></marquee>
+					</div>
+					<div class="blackbox">
+						<div class="circle"></div>
+					</div>
+					<div class="insideline4-2 border">
+						<p style="margin: 0; padding-top: 30px; padding-left: 20px; line-height: 48px;">Upcoming <br> Worldcons :</p>
+					</div>
+					<div class="insideline4-3">
+						<div class="insideline4-3-1 border">
+							<p style="margin: 0; padding-top: 20px; padding-left: 30px;"><a href="https://en.chengduworldcon.com/">2023 Cheongdu Worldcons</a></p>
+						</div>
+						<div class="insideline4-3-2 border">
+							<p style="margin: 0; padding-top: 20px; padding-left: 30px;"><a href="https://glasgow2024.org/">2024 Glasgow Worldcons</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="footer border">
+					<div class="footer1"></div>
+					<div class="footer2"><p style="margin: 0; padding-top: 19px;">copyright 2023. YeonuCho. All rights reserved</p></div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>
